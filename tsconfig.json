@@ -1,6 +1,19 @@
 {
-	"extends": "@astolat/ts-config",
-	"compilerOptions": {
-		"noEmit": true
-	}
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@astolat/*": [
+                "packages/common/*/src",
+                "packages/components/*/src",
+                "packages/config/*/src"
+            ]
+        }
+    },
+    "extends": "@astolat/ts-config",
+    "include": [
+        "**/src/**/*.ts",
+        "**/src/**/*.tsx",
+        "**/src/**/*.js",
+        "**/src/**/*.jsx"
+    ]
 }
